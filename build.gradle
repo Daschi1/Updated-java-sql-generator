@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'org.sql.generation'
-version 'v1.0.1a'
+version 'v1.0.2a'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
