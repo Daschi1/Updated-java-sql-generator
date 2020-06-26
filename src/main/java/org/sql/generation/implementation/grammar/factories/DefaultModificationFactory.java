@@ -14,6 +14,7 @@
 
 package org.sql.generation.implementation.grammar.factories;
 
+import org.sql.generation.api.grammar.builders.booleans.BooleanBuilder;
 import org.sql.generation.api.grammar.builders.modification.ColumnSourceByValuesBuilder;
 import org.sql.generation.api.grammar.builders.modification.DeleteBySearchBuilder;
 import org.sql.generation.api.grammar.builders.modification.InsertStatementBuilder;
@@ -54,9 +55,8 @@ public class DefaultModificationFactory extends AbstractModificationFactory {
     }
 
     @Override
-    public DeleteBySearchBuilder deleteBySearch() {
-        return new DeleteBySearchBuilderImpl(this.getProcessor(), this.getVendor().getBooleanFactory()
-                .booleanBuilder());
+    public DeleteBySearchBuilder deleteBySearch(final BooleanBuilder booleanBuilder) {
+        return new DeleteBySearchBuilderImpl(this.getProcessor(), booleanBuilder);
     }
 
     @Override

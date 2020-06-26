@@ -14,6 +14,7 @@
 
 package org.sql.generation.api.grammar.factories;
 
+import org.sql.generation.api.grammar.builders.booleans.BooleanBuilder;
 import org.sql.generation.api.grammar.builders.modification.ColumnSourceByValuesBuilder;
 import org.sql.generation.api.grammar.builders.modification.DeleteBySearchBuilder;
 import org.sql.generation.api.grammar.builders.modification.InsertStatementBuilder;
@@ -69,10 +70,11 @@ public interface ModificationFactory {
     /**
      * Creates builder to create {@link DeleteBySearch} statements.
      *
+     * @param booleanBuilder The {@link BooleanBuilder} to use.
      * @return The new builder for {@link DeleteBySearch}.
      * @see DeleteBySearchBuilder
      */
-    DeleteBySearchBuilder deleteBySearch();
+    DeleteBySearchBuilder deleteBySearch(BooleanBuilder booleanBuilder);
 
     /**
      * Creates builder to create {@link InsertStatement}s.
