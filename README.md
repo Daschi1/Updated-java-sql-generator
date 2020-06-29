@@ -1,7 +1,6 @@
 #  Updated-java-sql-generator
 
-[![](https://jitpack.io/v/Zyonic-Software/updated-java-sql-generator.svg)](https://jitpack.io/#Zyonic-Software/updated-java-sql-generator)
-
+[![](https://jitpack.io/v/Daschi1/updated-java-sql-generator.svg)](https://jitpack.io/#Daschi1/updated-java-sql-generator)
 
 ## An updated version of the [java-sql-generator](https://github.com/stazz/java-sql-generator). Full credit to [Stanislav Muhametsin](https://github.com/stazz)!
 
